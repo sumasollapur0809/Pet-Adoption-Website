@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Furry Friend</title>
+    <style>
+         body{
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(255, 184, 255);
+            font-family: cursive;
+
+        }
+        form{
+            width: 500px;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(228, 116, 153);
+            border: 1px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+        }
+         input{
+        width: 70%;
+        padding: 8px;
+        margin: 8px ;
+        border-radius: 10px;
+        border: 1px ;
+        cursor: pointer;
+    }
+    select{
+        width: 50%;
+        padding: 8px;
+        margin: 8px ;
+        border-radius: 10px;
+        border: 1px ;
+    }
+        .f{
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            border: 1px solid black;
+            background-color: rgb(250, 140, 250);
+            border-radius: 10px;
+            width: 50%;
+            padding: 10px;
+            margin: 20px auto;
+            display: block;
+            text-decoration: solid black;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background-color: rgb(228, 122, 228);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Adopt a Pet 😊</h1>
+    <p>Thank you for choosing to adopt a pet! Please fill out the form below to start the adoption process❤️😺.</p>
+    <form fieldset>
+        <label class="f">Adoption Form</label><br><br>
+        <label>Your Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
+
+        <label >Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="enter your email" required><br><br>
+
+        <label>Select a Pet:</label><br>
+        <select id="pet" required>
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog🐶</option>
+            <option value="cat">Cat😺</option>
+            <option value="rabbit">Rabbit🐰</option>
+            <option value="hamster">Hamster🐹</option>
+        </select><br><br>
+        
+        <label>Preferred Adoption Date:</label><br>
+        <input type="date" id="adoption-date" name="adoption-date" required><br><br>
+
+        <label>Address:</label><br>
+        <input type="text" id="address" name="address" placeholder="enter your address 🏠" required><br>
+
+        <label>Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any specific requirements or questions?😊"></textarea><br><br>    
+
+        <button class="btn" type="submit">Submit</button>
+    </form>
+</body>
+</html>
