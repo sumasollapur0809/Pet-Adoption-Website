@@ -149,7 +149,8 @@ body {
 
 .signup-container .btn5 {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin-left: 30px;
   padding: 12px;
   background: #ff63ed;
   color: white;
@@ -207,12 +208,14 @@ body {
   font-size: 14px;
 }
 
-.login .btn {
+
+.btn {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin-left: 30px;
   padding: 12px;
   background: #f76ecc;
-  color: white;
+  /* color: white; */
   border: none;
   border-radius: 6px;
   cursor: pointer;

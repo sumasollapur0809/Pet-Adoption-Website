@@ -13,18 +13,16 @@
 
   <div class="login">
     <h1>Login to your Furry Friend account 😀</h1>
-    <form>
-      <label>Username:</label>
-      <input type="text" placeholder="Enter your username">
+    <form onsubmit="return loginUser()">
+  <label>Username:</label>
+  <input type="text" id="username" placeholder="Enter your username">
 
-      <label>Password:</label>
-      <input type="password" placeholder="Enter your password ⌨️">
-    </form>
+  <label>Password:</label>
+  <input type="password" id="password" placeholder="Enter your password ⌨️">
 
-    <a class="btn" href="home.html">Login</a>
-
-    <p>Don't have an account? No problem 😊</p>
-    <a class="btn" href="signup.html">Sign Up</a>
+</form>
+<button class="btn" onclick="loginUser()">Login</button>    <p>Don't have an account? No problem 😊</p>
+    <button class="btn"><a  href="signup.html">Sign Up</a></button>
   </div>
 <script src="script.js"></script>
 </body>
