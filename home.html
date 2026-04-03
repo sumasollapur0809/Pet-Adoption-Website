@@ -6,15 +6,15 @@
   <title>Your Furry Friend</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="checkLogin()">
+<body onload="checkLogin(); showPopup()">
     <div class="auth-header">
-    <img src="pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
+    <img src="assets/pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
   </div>
   <h1 class="home-title">Welcome! to Your Furry Friend</h1>
 
   <div class="home-main-box">
     <div class="home-pet-box">
-      <img src="pic1.jpg">
+      <img src="assets/pic1.jpg">
       <div class="home-info-box">
         <p>Name: Buddy</p>
         <p>Age: 3 years</p>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="home-pet-box">
-      <img src="pic2.jpg">
+      <img src="assets/pic2.jpg">
       <div class="home-info-box">
         <p>Name: Milo</p>
         <p>Age: 2 years</p>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="home-pet-box">
-      <img src="pic3.jpg">
+      <img src="assets/pic3.jpg">
       <div class="home-info-box">
         <p>Name: Lucy</p>
         <p>Age: 2.5 years</p>
@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="home-pet-box">
-      <img src="pic4.jpg">
+      <img src="assets/pic4.jpg">
       <div class="home-info-box">
         <p>Name: Lucy</p>
         <p>Age: 2.5 years</p>
@@ -64,7 +64,7 @@
       </div>
     </div>
     <div class="home-pet-box">
-      <img src="pic5.jpg">
+      <img src="assets/pic5.jpg">
       <div class="home-info-box">
         <p>Name: Lucy</p>
         <p>Age: 2.5 years</p>
@@ -76,7 +76,7 @@
       </div>
     </div>
     <div class="home-pet-box">
-      <img src="pic6.jpg">
+      <img src="assets/pic6.jpg">
       <div class="home-info-box">
         <p>Name: Lucy</p>
         <p>Age: 2.5 years</p>
@@ -88,6 +88,7 @@
       </div>
     </div>
   </div>
+  <div id="pop-up" class="pop-up-message"></div>
   <script src="script.js"></script>
 </body>
 </html>

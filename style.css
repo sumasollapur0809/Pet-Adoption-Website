@@ -397,4 +397,22 @@ body {
   transform: scale(1.03);
 }
 
-/* Header */
+.pop-up-message {
+    position: fixed;  
+    bottom: 20px;      
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    background: #ee6787;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000; 
+}
+
+.pop-up-message.show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}

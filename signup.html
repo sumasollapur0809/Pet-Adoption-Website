@@ -6,29 +6,29 @@
   <title>Sign Up - Furry Friend</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="showPopup()">
   <div class="auth-header">
-    <img src="pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
+    <img src="assets/pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
   </div>
 
   <div class="signup-container">
 
     <h1>Sign Up for Your Furry Friend! 🐾</h1>
-    <form>
+    <form onsubmit="return handleSignup(event)">
       <label>Username:</label>
-      <input type="text" placeholder="Enter your username 👤">
+      <input type="text" placeholder="Enter your username 👤" required>
 
       <label>Email:</label>
-      <input type="email" placeholder="Enter your email">
+      <input type="email" placeholder="Enter your email" required>
 
       <label>Phone Number:</label>
-      <input type="tel" placeholder="Enter your phone number 📞">
+      <input type="tel" placeholder="Enter your phone number 📞" required>
 
       <label>Password:</label>
-      <input type="password" placeholder="Enter your password">
+      <input type="password" placeholder="Enter your password" required>
 
       <label>Confirm Password:</label>
-      <input type="password" placeholder="Confirm your password">
+      <input type="password" placeholder="Confirm your password" required>
 
       <select>
         <option value="" disabled selected>Select your favorite pet 🐾</option>
@@ -37,11 +37,12 @@
         <option>Bird 🐣</option>
       </select>
 
-      <button class="btn5" type="submit"><a href="home.html">Sign Up</a></button>
+     <button class="btn5" type="submit">Sign Up</button>
     </form>
 
     <p>Already have an account? <a href="login.html">Login here</a></p>
   </div>
+  <div id="pop-up" class="pop-up-message"></div>
 <script src="script.js"></script>
 </body>
 </html>

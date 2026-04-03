@@ -6,16 +6,16 @@
   <title>Your Furry Friend</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body onload="checkLogin()">
+<body onload="checkLogin(); showPopup()">
     <div class="auth-header">
-    <img src="pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
+    <img src="assets/pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
   </div>
   <div class="adopt-center">
     <div class="adopt-container">
       <h1>Adopt a Pet 😊</h1>
       <p>Fill the form to adopt your furry friend ❤️</p>
 
-      <form>
+      <form onsubmit="handleAdoption(event)">
         <label class="f">Adoption Form</label><br><br>
 
         <label>Your Name:</label><br>
@@ -49,6 +49,6 @@
       </form>
     </div>
   </div>
-  <script src="script.js"></script>
+<div id="pop-up" class="pop-up-message"></div>  <script src="script.js"></script>
 </body>
 </html>

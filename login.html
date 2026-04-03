@@ -6,9 +6,9 @@
   <title>Login - Furry Friend</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="checkLogin(); showPopup()">
       <div class="auth-header">
-    <img src="pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
+    <img src="assets/pet-adoption-center.png" alt="Furry Friend Logo" class="auth-logo">
   </div>
 
   <div class="login">
@@ -20,10 +20,13 @@
   <label>Password:</label>
   <input type="password" id="password" placeholder="Enter your password ⌨️">
 
+  <button type="submit" class="btn">Login</button>
 </form>
-<button class="btn" onclick="loginUser()">Login</button>    <p>Don't have an account? No problem 😊</p>
+   
+<p>Don't have an account? No problem 😊</p>
     <button class="btn"><a  href="signup.html">Sign Up</a></button>
   </div>
+  <div id="pop-up" class="pop-up-message">you have logged in successfully🥳</div>
 <script src="script.js"></script>
 </body>
 </html>
